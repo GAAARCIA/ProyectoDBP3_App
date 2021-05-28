@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.btn_angelica:
                 app = "https://*-Se agrega el ngrok-*/329528.json";
-
                 break;
 
             case R.id.btn_martin:
