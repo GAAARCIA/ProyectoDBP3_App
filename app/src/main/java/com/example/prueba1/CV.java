@@ -22,6 +22,8 @@ public class CV extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cv);
 
+        String app = getIntent().getStringExtra("app");
+
         TextView nombre = findViewById(R.id.nombre);
         TextView bio = findViewById(R.id.bio);
         TextView educacion = findViewById(R.id.educacion);
