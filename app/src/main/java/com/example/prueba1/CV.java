@@ -22,7 +22,7 @@ public class CV extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cv);
 
-        String app = getIntent().getStringExtra("app");
+        String url = getIntent().getStringExtra("app");
 
         TextView nombre = findViewById(R.id.nombre);
         TextView bio = findViewById(R.id.bio);
@@ -30,8 +30,6 @@ public class CV extends AppCompatActivity {
         TextView habilidades = findViewById(R.id.habilidades);
 
         RequestQueue queue = Volley.newRequestQueue(this);
-
-        String url ="http://www.google.com";
 
         // Request a string response from the provided URL.
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
