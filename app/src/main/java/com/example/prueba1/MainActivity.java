@@ -2,6 +2,7 @@ package com.example.prueba1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    @SuppressLint("NonConstantResourceId")
     public void irAlCurriculum(View view) {
 
         String app = "https://*-Se agrega el ngrok-*";
@@ -21,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.btn_angelica:
                 app = "https://*-Se agrega el ngrok-*/329528.json";
+
                 break;
 
             case R.id.btn_martin:
