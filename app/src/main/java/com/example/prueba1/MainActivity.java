@@ -14,11 +14,27 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void irAlCurriculum(View view){
+    public void irAlCurriculum(View view) {
+
+        String app = "https://*-Se agrega el ngrok-*";
+
+        switch (view.getId()) {
+            case R.id.btn_angelica:
+                app = "https://*-Se agrega el ngrok-*/329528.json";
+                break;
+
+            case R.id.btn_martin:
+                app = "https://*-Se agrega el ngrok-*/319094.json";
+                break;
+
+            case R.id.btn_daniel:
+                app = "https://*-se agrega el ngrok-*/329694.json";
+                break;
+            default:
+        }
+
         Intent i = new Intent(this, CV.class);
+            i.putExtra("app",app);
         startActivity(i);
-
-
     }
-
 }
