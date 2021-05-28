@@ -12,8 +12,12 @@
         android:layout_height="57dp"
         android:onClick="irAlCurriculum"
         android:text="329528"
-        tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="239dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.302" />
 
     <Button
         android:id="@+id/btn_martin"
@@ -22,9 +26,11 @@
         android:onClick="irAlCurriculum"
         android:shadowColor="#FF5722"
         android:text="319094"
-        app:strokeColor="#FF5722"
-        tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="337dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#FF5722" />
 
     <Button
         android:id="@+id/btn_daniel"
@@ -33,8 +39,12 @@
         android:onClick="irAlCurriculum"
         android:shadowColor="#FF5722"
         android:text="329694"
-        app:strokeColor="#FF5722"
-        tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="450dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.716"
+        app:strokeColor="#FF5722" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

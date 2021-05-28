@@ -37,11 +37,11 @@ public class CV extends AppCompatActivity {
                     @Override
                     public void onResponse(String response) {
                         // Display the first 500 characters of the response string.
-                        Datos comoyoquiera = new Gson().fromJson(response.toString(), Datos.class);
-                        nombre.setText(comoyoquiera.nombre);
-                        bio.setText(comoyoquiera.bio);
-                        educacion.setText(comoyoquiera.educacion);
-                        habilidades.setText(comoyoquiera.habilidades);
+                        Datos datos = new Gson().fromJson(response.toString(), Datos.class);
+                        nombre.setText(datos.nombre);
+                        bio.setText(datos.bio);
+                        educacion.setText(datos.educacion);
+                        habilidades.setText(datos.habilidades);
 
                     }
 

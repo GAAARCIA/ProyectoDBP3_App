@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     public void irAlCurriculum(View view){
         Intent i = new Intent(this, CV.class);
         startActivity(i);
+
+
     }
 
 }
